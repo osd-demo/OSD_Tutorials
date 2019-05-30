@@ -1,0 +1,25 @@
+Access your cluster
+Once your OpenShift Dedicated cluster is configured and ready to use, you can access it through the following paths:
+
+Cluster ID: The unique cluster name provided by the customer during provisioning. It is lowercase, and only contains letters, numbers, and hyphens.
+
+Console URL: The OpenShift Dedicated URL for the web console.
+
+https://console.<cluster-id>.openshift.com
+API URL: The OpenShift Dedicated URL for the OpenShift and Kubernetes REST API.
+
+https://api.<cluster-id>.openshift.com
+Registry URL: The OpenShift Dedicated URL for the private image registry. In addition to containing all images used by OpenShift Dedicated, podman pull or docker pull and podman push or docker push can be used directly on the registry.
+
+https://registry.<cluster-id>.openshift.com
+Metrics API URL: The OpenShift Dedicated URL for the Hawkular Metrics API.
+
+https://metrics.<cluster-id>.openshift.com
+Logging URL: The OpenShift Dedicated URL for the aggregate logging Kibana interface.
+
+https://logs.<cluster-id>.openshift.com
+If an authentication callback URL is necessary, you can configure it with:
+
+https://api.<cluster-id>.openshift.com/oauth2callback/<IdP name>
+Access your OpenShift Dedicated portal
+Additional information about your cluster, including usage, subscription information, and past and upcoming maintenance is available at https://dedicated.openshift.com.

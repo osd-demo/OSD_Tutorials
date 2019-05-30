@@ -1,0 +1,78 @@
+config:
+  vars:
+    ##
+    # Common variables (environment dependant)
+    #
+    - name: CONSOLE_ADDRESS
+      desc: Address to access the OpenShift console
+      value: https://master.osevg.openshiftworkshop.com
+    - name: ROUTER_ADDRESS
+      desc: Router DNS suffix (https://appname-project.<suffix>)
+      value: "apps.osevg.openshiftworkshop.com"
+    - name: INFRA_PROJECT
+      desc: Infrastructure project name
+      value: ocp-workshop
+    - name: USER_NAME
+      desc: User to login
+      value: "userXY"
+    - name: USER_PASSWORD
+      desc: Password to login
+      value: "openshift"
+    - name: USER_PROJECT
+      desc: Project the user has to login
+      value: "userXY"
+    ##
+    # Common fixed variables
+    #
+    - name: DOCS_URL
+      desc: URL prefix to access docs (docs.openshift.org/latest) without the protocol prefix. (https:// will be used.)
+      value: docs.openshift.com/container-platform/latest
+    ##
+    # Module environment
+    #
+    - name: ENV_MASTERS
+      desc: Number of master nodes in the cluster
+      value: 1
+    - name: ENV_INFRA
+      desc:  Number of ENV_INFRA nodes in the cluster
+      value: 1
+    - name: ENV_NODES
+      desc: Number of container nodes in the cluster
+      value: 20
+    ##
+    # Module installing CLI
+    #
+    - name: DOWNLOAD_CLIENT_WINDOWS
+      desc: URL to download oc client for Windows
+      value: "https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-windows.zip"
+    - name: DOWNLOAD_CLIENT_MAC
+      desc: URL to download oc client for macOS
+      value: "https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-mac.zip"
+    - name: DOWNLOAD_CLIENT_LIN32
+      desc: URL to download oc client for 32bit Linux
+      value: ""
+    - name: DOWNLOAD_CLIENT_LIN64
+      desc: URL to download oc client for 64bit Linux
+      value: "https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz"
+    - name: OC_VERSION
+      desc: Expected oc version when `oc version` is executed
+      value: "oc v3.11.0+0cbc58b\nkubernetes v1.11.0+d4cacc0"
+    ##
+    # Module docker
+    #
+    - name: PARKSMAP_IMAGENAME
+      desc: Docker image name for the parksmap application
+      value: "parksmap"
+    - name: PARKSMAP_VERSION
+      desc: Version of parksmap to use
+      value: "1.2.0"
+
+modules:
+  common-environment:
+    name: Accessing cluster Overview
+    vars:
+      ENV_MASTERS:
+      ENV_INFRA:
+      ENV_NODES:
+      INFRA_PROJECT:
+      ROUTER_ADDRESS:

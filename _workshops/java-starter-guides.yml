@@ -1,0 +1,11 @@
+---
+id: java-starter-workshop
+name: OpenShift Dedicated Tutorials - Accessing your cluster 
+
+content:
+  url: https://raw.githubusercontent.com/openshift-labs/starter-guides/ocp-3.9
+
+
+modules:
+  activate:
+  - common-environment
