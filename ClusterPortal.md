@@ -1,6 +1,16 @@
-## Accessing the Cluster Portal and what it's used for
+# OpenShift Dedicated Cluster Portal
 
-The cluster portal is a location where a dedicated admin has access to view high level information about all the OpenShift Dedicated clusters they own. 
+
+The OpenShift Dedicated Portal can be accessed at https://dedicated.openshift.com using a Red Hat account. A designated admin can manage users that have access to specific cluster dashboards and data.
+The OpenShift Dedicated Portal provides the following:
+- A cluster overview for all OpenShift Dedicated clusters owned by a single customer.
+- A cluster dashboard for each OpenShift Dedicated cluster, containing cluster usage information, cluster component lists, node status and usage, and subscription information.
+- A user management section, where an admin can add, edit, and remove users who can access the OpenShift Dedicated Portal or individual cluster dashboards.
+- A maintenance scheduling section, where admins can select or modify maintenance windows for planned upgrade and maintenance events.
+
+The OpenShift Dedicated Portal is also used by Operations for change management. All maintenance events are scheduled and logged through the Portal, and the event log is available for audit at any time.
+
+## Accessing the Cluster Portal and what it's used for
 
 1. Go to https://dedicated.openshift.com
 
