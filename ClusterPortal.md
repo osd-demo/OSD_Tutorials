@@ -17,12 +17,11 @@ The cluster portal is a location where a dedicated admin has access to view high
 
 ![Clusters Available](/images/ClustersAvailable.png)
 
-4. Click on one of the top tiles stating one of the node statistics.  This will bring a dropdown showing you the correct CLI command to use to get this value.
+4. Click on one of the cluster tiles to get a more detailed view of that clusters metrics.  Then click on one of the top tiles stating one of the node statistics.  This will bring a dropdown showing you the correct CLI command to use to get this value.
 
 ![ClusterInfoCommand](/images/ClusterInfoCommand.png)
 
-
-5. Click on one of the cluster tiles to get a more detailed view of that clusters metrics
+5. More metrics will be displayed as in the below images
 
 ![Cluster Details](/images/ClusterDetails1.png)
 ![Cluster Details](/images/ClusterDetails2.png)
