@@ -4,7 +4,7 @@ The cluster portal is a location where a dedicated admin has access to view high
 
 1. Go to https://dedicated.openshift.com
 
-2. Click "Log in with Red Hat" and procees to enter in your credentials
+2. Click "Log in with Red Hat" and proceed to enter in your credentials
 
 ![Cluster Portal](/images/ClusterPortalLogin.png)
 
