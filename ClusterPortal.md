@@ -19,6 +19,7 @@ The cluster portal is a location where a dedicated admin has access to view high
 
 4. Click on one of the cluster tiles to get a more detailed view of that clusters metrics
 
-
+![Cluster Details](/images/ClusterDetails1.png)
+![Cluster Details](/images/ClusterDetails2.png)
 
 5. 
