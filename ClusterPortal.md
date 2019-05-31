@@ -21,17 +21,15 @@ The cluster portal is a location where a dedicated admin has access to view high
 
 ![ClusterInfoCommand](/images/ClusterInfoCommand.png)
 
-5. More metrics will be displayed as in the below images
+5. Information is presented about core usage, memory, storage, node names, OpenShift version, Docker version, etc..
 
 ![Cluster Details](/images/ClusterDetails1.png)
 ![Cluster Details](/images/ClusterDetails2.png)
 
-6. Information is presented about core usage, memory, storage, node names, OpenShift version, Docker version, etc..
-
-7. You will also see links to core parts of the cluster such as the Web Console, Logs, API, and Registry.
+6. You will also see links to core parts of the cluster such as the Web Console, Logs, API, and Registry.
 
 ![Cluster Links](/images/ClusterPortalLinks.png)
 
-8. At the bottom there are also sections for seeing if any subscriptions will be expiring soon as well as any upcoming maintenance events.
+7. At the bottom there are also sections for seeing if any subscriptions will be expiring soon as well as any upcoming maintenance events.
 
 ![Cluster Sub Maint](/images/ClusterSubMaint.png)
