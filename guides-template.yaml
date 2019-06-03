@@ -1,18 +1,18 @@
 kind: Template
 apiVersion: v1
 metadata:
-  name: starter-guides
+  name: osd-tutorials
   annotations:
     description: Template to deploy a workshop guide with workshopper. Look into any of the workshops for the used variables that can be defined in the configMap.
 parameters:
 - name: APPNAME
   description: Application name
-  value: starter-guides
+  value: osd-tutorials
   displayName: Application name
   required: true
 - name: CONTENT_URL_PREFIX
   description: Console url (e.g. https://raw.githubusercontent.com/openshift-labs/starter-guides/ocp-3.11)
-  value: https://raw.githubusercontent.com/anjalitelang/starter-guides/ocp-3.11
+  value: https://raw.githubusercontent.com/osd-demo/OSD_Tutorials/ocp-3.11
   displayName: Content URL prefix
   required: true
 - name: WORKSHOPS_URLS
@@ -60,7 +60,7 @@ objects:
 - kind: ImageStream
   apiVersion: v1
   metadata:
-    name: workshopper
+    name: workshoppertwo
     labels:
       app: ${APPNAME}
   spec:
