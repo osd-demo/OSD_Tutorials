@@ -1,13 +1,13 @@
 kind: Template
 apiVersion: v1
 metadata:
-  name: osd-tutorials
+  name: starter-guides
   annotations:
     description: Template to deploy a workshop guide with workshopper. Look into any of the workshops for the used variables that can be defined in the configMap.
 parameters:
 - name: APPNAME
   description: Application name
-  value: osd-tutorials
+  value: starter-guides
   displayName: Application name
   required: true
 - name: CONTENT_URL_PREFIX
@@ -60,7 +60,7 @@ objects:
 - kind: ImageStream
   apiVersion: v1
   metadata:
-    name: workshoppertwo
+    name: workshopper
     labels:
       app: ${APPNAME}
   spec:
