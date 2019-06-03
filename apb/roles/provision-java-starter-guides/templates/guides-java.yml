@@ -59,6 +59,7 @@ objects:
         activate:
         - common-environment
         - GettingSupport
+        
 - kind: ImageStream
   apiVersion: v1
   metadata:
